@@ -1,0 +1,12 @@
+<h2>Toy Factory</h2>
+
+<!-- <div><button (click)="getLetters()">Generate Letter</button>
+  <button (click)="getNumbers()">Generate Numbers</button></div>  
+  <div><button (click)="getReference()">Generate Reference</button></div>-->
+
+<div><button (click)="generateProduct()">Generate Product</button></div>
+
+<div *ngFor="let produits of this.catalogue.listeProduits">
+  ID : {{ produits.id }} Name : {{ produits.name }} Ref :
+  {{ produits.reference }}
+</div>
